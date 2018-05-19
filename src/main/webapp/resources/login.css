@@ -1,0 +1,16 @@
+@charset "UTF-8";
+*{margin: 0}
+#header{width: 100%; text-align: center; border-bottom: 1px solid black; position: relative;}
+#menu{text-decoration: none; padding:0; list-style: none;}
+#menu li{display: inline; padding: 0 5px 0 5px; font-size: 30px;}
+#menu li a{text-decoration:none; color: black;}
+#menu li a:hover{text-decoration: underline;}
+#login{position: absolute; right:0;}
+#login_form{padding: 0px; }
+#login_form li{display: inline;}
+#login_form li a{text-decoration: none; color: black; padding: 0 10px 0 10px;}
+#login_form li a:hover{text-decoration: underline;}
+#main{width: 100%;}
+#main_inner{width: 1100px; margin:auto;}
+#poster{padding: 0;}
+#poster li{text-decoration: none; float: left; padding: 10px; list-style: none;}
