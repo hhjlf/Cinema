@@ -6,8 +6,8 @@
 <bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
     <property name="host" value="smtp.gmail.com" />
     <property name="port" value="587" />
-    <property name="username" value="hhjlf3576@gmail.com" />
-    <property name="password" value="gnsld159" />
+    <property name="username" value="gwen2803@gmail.com" />
+    <property name="password" value="dayeakf9YO!" />
     <property name="javaMailProperties">
         <props>
             <prop key="mail.smtp.ssl.trust">smtp.gmail.com</prop>
@@ -16,7 +16,7 @@
         </props>
     </property>
 </bean>
-<bean id="mailService" class="com.main.cinema.newmem.info.impl.MailServiceImpl">
+<bean id="mailService" class="com.main.cinema.user.service.impl.MailServiceImpl">
     <property name="javaMailSender" ref="javaMailSender" />
 </bean>
 

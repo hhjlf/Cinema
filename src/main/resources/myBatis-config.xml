@@ -4,14 +4,16 @@
 <configuration>
     <!--Sql Mapper 설정-->
     <typeAliases>
-    	<typeAlias alias="movie" type="com.main.cinema.main.movieinfo.MovieVO"/>
+    	<typeAlias alias="movie" type="com.main.cinema.main.dao.MovieVO"/>
+    
+    	<typeAlias alias="user" type="com.main.cinema.user.dao.UserVO"/>
     </typeAliases>
     <environments default="development">
     <environment id="development">
     <transactionManager type="JDBC"/>
     <dataSource type="POOLED">
-    <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-    <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+    <property name="driver" value="net.sf.log4jdbc.DriverSpy"/>
+     <property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe"/>
     <property name="username" value="hhjlf"/>
     <property name="password" value="asd3576"/>
     </dataSource>
@@ -19,6 +21,7 @@
     </environments>
     <mappers>
         <!--위치값을 줄때 루트 폴터는 resources 폴더이다.-->
-        <mapper resource="myBatis/test.xml"></mapper>
+        <mapper resource="myBatis/movie.xml"></mapper>
+        <mapper resource="myBatis/user.xml"></mapper>
     </mappers>
 </configuration>
